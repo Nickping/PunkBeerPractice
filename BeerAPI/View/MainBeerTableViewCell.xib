@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainBeerTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="MainBeerTableViewCell" customModule="맥믈리에" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-mF-vbt">
+                        <rect key="frame" x="10" y="10" width="40" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Pnr-5l-aEB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZR-DB-07Y">
+                        <rect key="frame" x="60" y="10" width="250" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JFt-tZ-e44"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-Pc-Cfh">
+                        <rect key="frame" x="60" y="35" width="250" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lHt-Pc-Cfh" secondAttribute="trailing" constant="10" id="3qg-oZ-KfA"/>
+                    <constraint firstItem="EFN-mF-vbt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MQN-fi-Nyn"/>
+                    <constraint firstItem="EFN-mF-vbt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Q08-mV-87Z"/>
+                    <constraint firstItem="lHt-Pc-Cfh" firstAttribute="top" secondItem="TZR-DB-07Y" secondAttribute="bottom" constant="5" id="Tjs-Uc-Q3Q"/>
+                    <constraint firstItem="TZR-DB-07Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xuf-0Q-kej"/>
+                    <constraint firstItem="lHt-Pc-Cfh" firstAttribute="leading" secondItem="EFN-mF-vbt" secondAttribute="trailing" constant="10" id="ftW-WS-RpX"/>
+                    <constraint firstAttribute="bottom" secondItem="lHt-Pc-Cfh" secondAttribute="bottom" constant="10" id="je7-X2-bRA"/>
+                    <constraint firstItem="TZR-DB-07Y" firstAttribute="leading" secondItem="EFN-mF-vbt" secondAttribute="trailing" constant="10" id="kc0-rf-rTA"/>
+                    <constraint firstAttribute="bottom" secondItem="EFN-mF-vbt" secondAttribute="bottom" constant="10" id="uPQ-vb-zUL"/>
+                    <constraint firstAttribute="trailing" secondItem="TZR-DB-07Y" secondAttribute="trailing" constant="10" id="y5n-Zy-YPu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="beerDescription" destination="lHt-Pc-Cfh" id="Nhh-AE-k5V"/>
+                <outlet property="beerImage" destination="EFN-mF-vbt" id="zAm-Bb-dbd"/>
+                <outlet property="beerName" destination="TZR-DB-07Y" id="uLL-cK-X1f"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

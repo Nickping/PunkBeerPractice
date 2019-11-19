@@ -1,0 +1,6 @@
+framework module Pods_BeerAPITests {
+  umbrella header "Pods-BeerAPITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
